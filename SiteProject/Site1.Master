@@ -1,0 +1,166 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebSiteSofiaUni.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.19.1/jquery.validate.min.js"></script>
+<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/mvc/5.2.7/jquery.validate.unobtrusive.min.js"></script>
+
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style7 {
+            height: 423px;
+            width: 706px;
+        }
+        .auto-style8 {
+            margin-left: 0px;
+        }
+        </style>
+
+
+
+
+  
+
+  
+
+</head>
+<body bgcolor="#d9e7fc">
+    <form id="form1" runat="server">
+        <div align="center">
+           
+                <table class="auto-style9" border="1" style="width:1400px"; margin="auto" bgcolor="#ebf2fc">
+                    <tr>
+                        <td class="auto-style2" colspan="3">
+                            <center>
+                            <img alt="" class="auto-style10" src="Pictures/Screenshot%202023-04-30%20at%2015-44-19%20.png" /></center></td>
+                    </tr>
+                    <tr>
+                        <td class="center" colspan="3" style="background-color:#a4c3f5; text-align:center">
+                           
+                            <center>
+                            <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" Font-Bold="True" Font-Strikeout="False" Font-Underline="False" ForeColor="Black" CssClass="horizontal-separator" Font-Names="Arial Narrow" Font-Overline="False" Font-Size="Large" ItemWrap="True" BorderColor="#99CCFF" StaticEnableDefaultPopOutImage="False" RenderingMode="Table" Width="200px" BorderStyle="Solid" BorderWidth="1px"   >
+                                <DynamicHoverStyle BackColor="#337EF5" BorderColor="#99CCFF" />
+                                <DynamicMenuItemStyle BackColor="#639CF7" BorderColor="#3333FF" />
+                                <DynamicMenuStyle BackColor="#0000CC" />
+                                <DynamicSelectedStyle BackColor="#0000CC" />
+                                <Items>
+                                    <asp:MenuItem Text="Университетът" Value="University" NavigateUrl="~/Nachalo.aspx" Selected="True"></asp:MenuItem>
+                                    <asp:MenuItem Text="Прием" Value="New Item" NavigateUrl="~/Priem.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="Образование" Value="New Item">
+                                        <asp:MenuItem Text="Бакалавърски програми" Value="Бакалавърски програми" NavigateUrl="~/BakavavurProgrami.aspx"></asp:MenuItem>
+                                        <asp:MenuItem Text="Магистърски програми" Value="Магистърски програми" NavigateUrl="~/MagisturskiProgrami.aspx"></asp:MenuItem>
+                                    </asp:MenuItem>
+                                    <asp:MenuItem Text="Студенти" Value="New Item" NavigateUrl="~/Studenti.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="Наука" Value="New Item" NavigateUrl="~/Nauka.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="Новини" Value="New Item" NavigateUrl="~/Novini.aspx"></asp:MenuItem>
+                                </Items>
+                                <StaticHoverStyle BackColor="#8FB7F7" BorderColor="#3366FF" BorderStyle="Solid" BorderWidth="1px" />
+                                <StaticMenuItemStyle BackColor="#8FB7F7" BorderColor="#639CF7" BorderStyle="Solid" BorderWidth="2px" ForeColor="Black" HorizontalPadding="10px" />
+                                <StaticMenuStyle BackColor="#3366FF" BorderStyle="Solid" BorderWidth="1px" Height="30px" HorizontalPadding="10px" VerticalPadding="10px" />
+                                <StaticSelectedStyle BorderStyle="Solid" BorderWidth="1px" />
+                                <StaticItemTemplate>
+                                    <%# Eval("Text") %>
+                                </StaticItemTemplate>
+                            </asp:Menu>
+                                </center>
+                                
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style3" colspan="3" >
+                            <center>
+                                <img alt="" class="auto-style11" src="Pictures/Screenshot%202023-04-30%20at%2016-00-21.png" /></center>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style5">
+                            <asp:Label ID="Label1" runat="server" Text="Актуално" BackColor="#CCCCCC" BorderStyle="Solid" CssClass="static" Font-Italic="False" Font-Overline="False" ForeColor="#CC3300" Height="23px" Width="280px"  BorderColor="#CCCCCC" style="text-align: center; "></asp:Label>
+                            <asp:TreeView ID="TreeView1" runat="server" ForeColor="Black" Height="466px" >
+                                <Nodes>
+                                    <asp:TreeNode Text="Спорт" Value="New Node" Selected="True" NavigateUrl="~/SportGallery.aspx"></asp:TreeNode>
+                                    <asp:TreeNode Text="Профил на купувача" Value="New Node"></asp:TreeNode>
+                                    <asp:TreeNode Text="Въпроси" Value="New Node" NavigateUrl="~/Vuprosi.aspx"></asp:TreeNode>
+                                    <asp:TreeNode Text="Защита на личните данни" Value="New Node" NavigateUrl="~/ZashtitaNaLichniteDanni.aspx"></asp:TreeNode>
+                                </Nodes>
+                            </asp:TreeView>
+                        </td>
+                        <td class="auto-style7">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                <p class="pCenter">
+                                    <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></p>
+                            </asp:ContentPlaceHolder>
+
+                        </td>
+                        <td class="auto-style4">
+                            <table class="auto-style12">
+                                <tr>
+                                    <td class="auto-style15">
+                                        <asp:Calendar ID="Calendar1" runat="server" BackColor="White" BorderColor="#3366CC" BorderWidth="1px" CellPadding="1" DayNameFormat="Shortest" Font-Names="Verdana" Font-Size="8pt" ForeColor="#003399" Height="200px" Width="322px">
+                                            <DayHeaderStyle BackColor="#99CCCC" ForeColor="#336666" Height="1px" />
+                                            <NextPrevStyle Font-Size="8pt" ForeColor="#CCCCFF" />
+                                            <OtherMonthDayStyle ForeColor="#999999" />
+                                            <SelectedDayStyle BackColor="#009999" Font-Bold="True" ForeColor="#CCFF99" />
+                                            <SelectorStyle BackColor="#99CCCC" ForeColor="#336666" />
+                                            <TitleStyle BackColor="#003399" BorderColor="#3366CC" BorderWidth="1px" Font-Bold="True" Font-Size="10pt" ForeColor="#CCCCFF" Height="25px" />
+                                            <TodayDayStyle BackColor="#99CCCC" ForeColor="White" />
+                                            <WeekendDayStyle BackColor="#CCCCFF" />
+                                        </asp:Calendar>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-style16">
+                                        <asp:Label ID="Label3" runat="server" Text="Предстоящи събития" BackColor="#CCCCCC" BorderStyle="Solid" CssClass="static" Font-Italic="False" Font-Overline="False" ForeColor="#CC3300" Height="23px" Width="310px"  BorderColor="#CCCCCC" style="text-align: center; "></asp:Label>
+                                        <asp:BulletedList ID="BulletedList1" runat="server" BorderStyle="Groove" BorderWidth="2px" BulletStyle="Disc" CssClass="auto-style8" Height="107px" Width="280px">
+                                            <asp:ListItem>04 Май 2023 19:30 “Реквием за най-прекрасното приключение в историята на човечеството”  </asp:ListItem>
+                                            <asp:ListItem>04 Май 2023 19:30  Кръжок по астрономия - Нови радио наблюдения на слънцето и неговата активност с LOFAR</asp:ListItem>
+                                        </asp:BulletedList>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-style14">
+                                        <asp:TreeView ID="TreeView2" runat="server" ForeColor="Black" Height="174px">
+                                            <Nodes>
+                                                <asp:TreeNode Text="Университетска библиотека" Value="Университетска библиотека"></asp:TreeNode>
+                                                <asp:TreeNode Text="Университетско издателство" Value="Университетско издателство"></asp:TreeNode>
+                                                <asp:TreeNode Text="Астрономическа обсерватория" Value="Астрономическа обсерватория"></asp:TreeNode>
+                                                <asp:TreeNode Text="Алумни клуб" Value="Алумни клуб"></asp:TreeNode>
+                                            </Nodes>
+                                        </asp:TreeView>
+                                    </td>
+                                </tr>
+                                <asp:Localize ID="Localize3" runat="server"></asp:Localize>
+                                 <asp:TextBox ID="TextBox1" runat="server" Width="168px"> </asp:TextBox><asp:Button ID="Button1" runat="server" Height="30px" Text="Търси" />
+                               
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="auto-style17">
+                            <asp:Localize ID="Localize1" runat="server"></asp:Localize>
+                            <asp:Localize ID="Localize2" runat="server"></asp:Localize>
+                            <asp:TreeView ID="TreeView3" runat="server" ImageSet="Simple" NodeIndent="10">
+                                <HoverNodeStyle Font-Underline="True" ForeColor="#DD5555" />
+                                <Nodes>
+                                    <asp:TreeNode Text="Вход" Value="Вход"></asp:TreeNode>
+                                    <asp:TreeNode Text="Услуги" Value="Услуги"></asp:TreeNode>
+                                    <asp:TreeNode Text="Обратна връзка" Value="Обратна връзка"></asp:TreeNode>
+                                </Nodes>
+                                <NodeStyle Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" HorizontalPadding="0px" NodeSpacing="0px" VerticalPadding="0px" />
+                                <ParentNodeStyle Font-Bold="False" />
+                                <SelectedNodeStyle Font-Underline="True" ForeColor="#DD5555" HorizontalPadding="0px" VerticalPadding="0px" />
+                            </asp:TreeView>
+                        </td>
+                    </tr>
+
+                </table>
+
+        </div>
+    </form>
+</body>
+
+</html>
