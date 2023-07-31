@@ -1,0 +1,10 @@
+C:\Users\bibid\source\repos\VS\VSP-640-ИМЗ\VSP_640-IMZ_1\VSP_640-IMZ_1\bin\Debug\VSP_640-IMZ_1.exe.config
+C:\Users\bibid\source\repos\VS\VSP-640-ИМЗ\VSP_640-IMZ_1\VSP_640-IMZ_1\bin\Debug\VSP_640-IMZ_1.exe
+C:\Users\bibid\source\repos\VS\VSP-640-ИМЗ\VSP_640-IMZ_1\VSP_640-IMZ_1\bin\Debug\VSP_640-IMZ_1.pdb
+C:\Users\bibid\source\repos\VS\VSP-640-ИМЗ\VSP_640-IMZ_1\VSP_640-IMZ_1\obj\Debug\VSP_640-IMZ_1.csproj.AssemblyReference.cache
+C:\Users\bibid\source\repos\VS\VSP-640-ИМЗ\VSP_640-IMZ_1\VSP_640-IMZ_1\obj\Debug\VSP_640_IMZ_1.Form1.resources
+C:\Users\bibid\source\repos\VS\VSP-640-ИМЗ\VSP_640-IMZ_1\VSP_640-IMZ_1\obj\Debug\VSP_640_IMZ_1.Properties.Resources.resources
+C:\Users\bibid\source\repos\VS\VSP-640-ИМЗ\VSP_640-IMZ_1\VSP_640-IMZ_1\obj\Debug\VSP_640-IMZ_1.csproj.GenerateResource.cache
+C:\Users\bibid\source\repos\VS\VSP-640-ИМЗ\VSP_640-IMZ_1\VSP_640-IMZ_1\obj\Debug\VSP_640-IMZ_1.csproj.CoreCompileInputs.cache
+C:\Users\bibid\source\repos\VS\VSP-640-ИМЗ\VSP_640-IMZ_1\VSP_640-IMZ_1\obj\Debug\VSP_640-IMZ_1.exe
+C:\Users\bibid\source\repos\VS\VSP-640-ИМЗ\VSP_640-IMZ_1\VSP_640-IMZ_1\obj\Debug\VSP_640-IMZ_1.pdb
